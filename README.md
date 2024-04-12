@@ -49,7 +49,7 @@ define('SMTP_PASSWORD', 'your_smtp_password');
 define('SMTP_ENCRYPTION', 'tls');
 
 // OpenSSL cipher key
-define('OPENSSL_CIPHER_KEY', 'your_open_ssl_cipher_key');
+define('OPENSSL_CIPHER_KEY', 'aes-256-cbc');
 ?>
 ```
 
