@@ -54,14 +54,19 @@ define('OPENSSL_CIPHER_KEY', 'aes-256-cbc');
 ```
 
 Ensure that you have already created the settings.php file with the necessary settings before running the application.
+
+## Export MySQL Database
+
+Export the MySQL database file (cablesandkits.sql) from the config/database/ folder and import it into your MySQL server or phpMyAdmin.
+
 ## Usage
 
-    Sending a Secret Message:
+    # Sending a Secret Message:
         Navigate to the application in your web browser.
         Enter the recipient's email address and the message you want to send.
         Click the "Send Message" button.
 
-    Reading a Secret Message:
+    # Reading a Secret Message:
         The recipient will receive an email containing a code for the secret message.
         You have to copy that code to access the secret message.
         Enter the code provided by the sender to decrypt and view the message.
