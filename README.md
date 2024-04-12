@@ -1,38 +1,38 @@
-Secret Message Task Application
+# Secret Message Task Application
 
 The Secret Message Task Application is a web-based application that allows users to send secret messages securely using PHPMailer for email delivery and OpenSSL for encryption and decryption.
-Prerequisites
+
+## Prerequisites
 
 Before running the application, ensure that the following software is installed on your system:
 
-    Apache HTTP Server
-    PHP
-    MySQL
+- Apache HTTP Server
+- PHP
+- MySQL
 
-Installation
+## Installation
 
-    Clone the repository to your local machine:
+1. Clone the repository to your local machine:
 
-    bash
+    ```bash
+    git clone <repository_url>
+    ```
 
-git clone <repository_url>
+2. Navigate to the project directory:
 
-Navigate to the project directory:
-
-bash
-
+    ```bash
     cd secret-message-task
+    ```
 
-    Ensure that the Apache server is configured to serve the project directory.
+3. Ensure that the Apache server is configured to serve the project directory.
 
-    Start the Apache server and navigate to http://localhost/secret-message-task in your web browser.
+4. Start the Apache server and navigate to `http://localhost/secret-message-task` in your web browser.
 
-Configuration
+## Configuration
 
-All configuration settings for the Secret Message Task Application are managed in the config/settings.php file. Before running the application, make sure to update this file with the appropriate settings for your environment. Here's an example of what the settings.php file may look like:
+All configuration settings for the Secret Message Task Application are managed in the `config/settings.php` file. Before running the application, make sure to update this file with the appropriate settings for your environment. Here's an example of what the `settings.php` file may look like:
 
-php
-
+```php
 <?php
 
 // Database settings
@@ -50,9 +50,11 @@ define('SMTP_ENCRYPTION', 'tls');
 
 // OpenSSL cipher key
 define('OPENSSL_CIPHER_KEY', 'your_open_ssl_cipher_key');
+?>
+```
 
 Ensure that you have already created the settings.php file with the necessary settings before running the application.
-Usage
+## Usage
 
     Sending a Secret Message:
         Navigate to the application in your web browser.
@@ -60,13 +62,15 @@ Usage
         Click the "Send Message" button.
 
     Reading a Secret Message:
-        The recipient will receive an email containing a link to the secret message.
-        Click the link in the email to access the secret message.
-        Enter the passphrase provided by the sender to decrypt and view the message.
+        The recipient will receive an email containing a code for the secret message.
+        You have to copy that code to access the secret message.
+        Enter the code provided by the sender to decrypt and view the message.
 
-Contributing
+## Contributing
 
 Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please open an issue or submit a pull request.
-License
+
+## License
 
 This project is licensed under the MIT License.
+
